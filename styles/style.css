@@ -1,0 +1,307 @@
+@import "variable.css";
+@import "reset.css";
+
+i {
+  color: black;
+}
+
+ul {
+  display: flex;
+}
+
+li a h5 {
+  margin: 0 10px;
+  color: black;
+}
+
+.primary {
+  border: 1px solid black;
+  padding: 8px 20px;
+  border-radius: 30px;
+  color: black;
+}
+
+.primary:hover {
+  background-color: var(--white);
+}
+
+.secondry {
+  border: 1px solid black;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+}
+
+.secondry:hover {
+  background-color: var(--gray);
+}
+
+.primary-green {
+  border: 1px solid var(--green);
+  padding: 8px 20px;
+  border-radius: 30px;
+  background-color: var(--green);
+  width: 150px;
+  text-align: center;
+  color: white;
+}
+
+.primary-green:hover {
+  background-color: var(--dark-green);
+}
+
+.secondary-green {
+  border: 1px solid var(--dark-green);
+  padding: 8px 20px;
+  border-radius: 30px;
+
+  color: var(--dark-green);
+}
+
+.secondary-green:hover {
+  background-color: var(--dark-green-2);
+}
+
+.sec-1 {
+  display: flex;
+  margin: 50px 0;
+}
+
+.sec-buttons {
+  display: flex;
+}
+
+.sec-buttons a:nth-child(2) {
+  margin: 0 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.sec-right-big {
+  width: 100%;
+}
+
+.sec-right-small {
+  width: 45%;
+}
+
+.right-par {
+  margin-left: 50px;
+}
+
+.header-left ul li a h5 {
+  letter-spacing: 1px;
+}
+
+.header-left ul li a h5:hover {
+  color: var(--light-gray);
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.header-wrapper {
+  padding: 15px 0;
+  border-bottom: 1px solid white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+}
+
+.container {
+  width: 1700px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 85px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right-l {
+  margin: 0 25px;
+  align-items: center;
+}
+
+.first-right-button {
+  display: flex;
+}
+
+header i:nth-last-child(1) {
+  display: none;
+}
+
+/* section */
+/* section */
+/* section */
+/* section */
+
+.section-wrapper {
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+}
+
+.section-container {
+  width: 1800px;
+  margin: auto;
+}
+
+section {
+  display: flex;
+}
+
+.left-img {
+  width: 380px;
+  margin-bottom: 30px;
+}
+
+.section-left {
+  padding: 175px 280px 0 35px;
+  border-right: 1px solid white;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10px;
+}
+
+.section-right {
+  padding: 30px 0 0 35px;
+
+  align-items: center;
+  margin-top: 100px;
+  background-color: var(--white-2);
+}
+
+.hamburger-menu-wrapper {
+  display: none;
+}
+
+.hamburger-menu {
+  padding-inline: 20px;
+}
+
+.hm-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hm-top i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.hm-bottom {
+  display: flex;
+}
+
+.hm-button {
+  width: 170px;
+}
+
+.hmb-mid {
+  margin: 0 10px;
+}
+
+/* hamburger menu */
+/* hamburger menu */
+/* hamburger menu */
+/* hamburger menu */
+
+.hamburger-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.hm-middle {
+  margin: 0 0 0 10px;
+  padding-left: 10px;
+}
+
+.hm-middle p {
+  cursor: pointer;
+  padding: 0 0 0 10px;
+}
+
+@media (max-width: 1755px) {
+  .container {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  .section-container {
+    width: auto;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1355px) {
+  .section-left {
+    display: none;
+  }
+
+  .right-par {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header-left ul,
+  .header-right {
+    display: none;
+  }
+
+  header i:nth-last-child(1) {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 665px) {
+  .sec-1 {
+    flex-direction: column;
+  }
+
+  .sec-right-small {
+    width: 100%;
+  }
+}
